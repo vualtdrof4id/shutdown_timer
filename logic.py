@@ -19,12 +19,3 @@ def cancel_shutdown():
     elif system == 'Linux' or system == 'Darwin':
         os.system('shutdown -c')
     print('Shutdown cancelled')
-
-def countdown_timer(minutes):
-    seconds_left = minutes * 60
-    while seconds_left > 0:
-        minutes_left, seconds = divmod(seconds_left, 60)
-        print(f'Time left: {minutes_left:02}:{seconds:02}', end='\r')
-        time.sleep(1)
-        seconds_left -= 1
-    schedule_shutdown(0)
