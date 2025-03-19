@@ -11,7 +11,6 @@ Shutdown Timer – is a simple application that allows users to schedule a compu
 
 #### ⚙️ Installation and start
 pip install -r requirements.txt -> python main.py
-Or for windows, run the compiled exe
 
 ##### 🔹 Run from the source code:
 ```bash
